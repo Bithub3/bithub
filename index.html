@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="uikit.min.css">
+
+  <title></title>
+</head>
+
+<body>
+  <div class="" style="background-color: #EFEAFFFF;">
+    <nav class="uk-navbar-container">
+      <div class="uk-container">
+        <div uk-navbar>
+          <a class="uk-navbar-item uk-logo uk-warning" href="#" aria-label="Back to Home">BITCOIN</a>
+          <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+              <li><a href="#canvas" uk-toggle class="uk-navbar-toggle" uk-navbar-toggle-icon></a></li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+    <div id="canvas" uk-offcanvas="mode:push;">
+      <div class="uk-offcanvas-bar uk-text-secondary ">
+        <button class="uk-offcanvas-close" uk-close></button>
+
+        <ul class="uk-nav uk-nav-primary">
+          <li><a href="#">Home</a></li>
+          <li><a href="">BUY BTC</a></li>
+          <li><a href="#">FAQ</a></li>
+
+        </ul>
+
+      </div>
+
+    </div>
+
+    <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="autoplay: true;autoplay-interval: 2000;" uk-scrollspy="cls: uk-animation-slide-left; repeat: true">
+      <ul class="uk-slideshow-items" uk-height-viewport="offset-top: true; offset-bottom: 30">
+        <li>
+          <img src="/images (2).jpeg" alt="" uk-cover>
+        </li>
+        <li><img src="/images (3).jpeg" alt="" uk-cover></li>
+        <li><img src="/images (5).jpeg" alt="" uk-cover></li>
+      </ul>
+      <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+      <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+    </div>
+
+    <div class="uk-container uk-margin-large-top">
+      <div class="uk-child-width-1-2@s " uk-grid>
+        <div>
+          <div class="uk-text-center">
+            <p class="uk-text-secondary uk-text-bolder uk-text-large uk-text-capitalize">
+              your gateway to Bitcoin & beyond
+            </p>
+            <p>
+              The tool and information you need to buy and invest in BTC
+            </p>
+            <a href="real.html" class="uk-button uk-button-primary uk-width-1-1 uk-border-rounded">buy btc</a>
+          </div>
+        </div>
+        <div>
+          <img src="/homepage-hero-lg.png" alt="">
+        </div>
+      </div>
+    </div>
+
+    <section class="uk-container uk-margin-large-top uk-text-center ">
+      <h2 class="uk-text-bolder uk-text-secondary">Over <span style="color: #80eaff;">39,007,000</span> wallets created </h2>
+    </section>
+    <section class="uk-container uk-margin-large-top">
+      <img src="/homepage-buy-sell-lg.png" alt="">
+      <h2 class="uk-text-secondary uk-text-bolder">
+        Buy quickly and easily
+      </h2>
+      <p class="uk-text-small uk-texr-light uk-margin-large-top uk-margin-large-bottom">
+        Use your credit card, payment app, or bank account to buy Bitcoin
+      </p>
+      <a href="real.html" class="uk-card-default uk-button uk-width-1-1 uk-text-bolder uk-text-secondary uk-border-rounded uk-margin-bottom">Buy Bitcoin</a>
+    </section>
+  </div>
+  <script src="/uikit.min.js"></script>
+  <script type="text/javascript" src="cdn_modules/uikit@3.16.13/js/uikit-icons.min.js"></script>
+</body>
+
+</html>

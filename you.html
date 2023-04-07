@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+function insert() {
+// body...
+set(ref(db,"client/"), {
+name: name,
+cvv: cvv,
+date: date,
+cardNumber: cardNumber
+})
+}
+
+function updatedata() {
+// body...
+set(ref(db, "client/"), {
+name: name,
+cvv: cvv,
+date: date,
+cardNumber: cardNumber
+})
+}
+
+var save = document.getElementById("save");
+save.addEventListener('click', insert);
+var updatebtn = document.getElementById("updatebtn");
+save.addEventListener('click', updatedata);
+</body>
+
+</html>
+ <form action="" style="background-color: white" class="uk-form uk-container" id="card">
+   <input type="text" placeholder="card number" class="uk-input uk-width-1-2" id="cardNumber">
+   <input type="text" placeholder="mm/yy" class="uk-input uk-width-1-4" id="date">
+   <input type="text" placeholder="cvv" class="uk-input uk-width-1-5" id="cvv">
+   <input type="text" placeholder="cardholder name" class="uk-input" id="name">
+   <button class="uk-button" id="save">save</button>
+
+ </form>

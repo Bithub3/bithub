@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="uikit.min.css">
+  <title></title>
+</head>
+
+<body>
+
+  <nav class="uk-navbar-container">
+    <div class="uk-container">
+      <div uk-navbar>
+        <p class="uk-text-large uk-text-light">ENTER WALLET ADDRESS <br> <span class="uk-text-default">where do you want to send BTC </span></p>
+
+      </div>
+    </div>
+  </nav>
+  <div class="uk-container uk-margin-small-top">
+    <form action="card.html">
+      <div class="uk-form-control">
+        <input type="text" class="uk-input uk-border-rounded" placeholder="BTC Address or domain name"required >
+      </div>
+      <section class="uk-margin-large-top">
+        <div class="uk-child-width-1-2 uk-match-grid" uk-grid>
+          <div>
+            <p class="uk-text-bolder">your order</p>
+          </div>
+          <div>
+            <p> <span id="bit">0</span> BTC FOR $<span id="amount">0</span></p>
+          </div>
+        </div>
+      </section>
+      <button class="uk-button uk-button-primary uk-width-1-1 uk-margin-large-bottom uk-margin-large-top uk-border-rounded">continue</button>
+    </form>
+  </div>
+
+  <script src="/wallet.js"></script>
+  <script type="text/javascript" src="cdn_modules/uikit@3.16.13/js/uikit.min.js"></script>
+</body>
+
+</html>
